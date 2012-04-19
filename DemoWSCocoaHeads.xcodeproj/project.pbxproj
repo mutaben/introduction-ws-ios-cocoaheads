@@ -17,6 +17,7 @@
 		907A3ACE153F6B2500DCA89D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A3ACD153F6B2500DCA89D /* DetailViewController.m */; };
 		907A3AD1153F6B2500DCA89D /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907A3ACF153F6B2500DCA89D /* MasterViewController.xib */; };
 		907A3AD4153F6B2500DCA89D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907A3AD2153F6B2500DCA89D /* DetailViewController.xib */; };
+		907A3ADD153F6BB300DCA89D /* BMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A3ADC153F6BB300DCA89D /* BMEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +25,20 @@
 		907A3AB7153F6B2500DCA89D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		907A3AB9153F6B2500DCA89D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A3ABB153F6B2500DCA89D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		907A3ABF153F6B2500DCA89D /* DemoWSCocoaHeads-Info.plist */ = {isa = PBXFileReference; path = "DemoWSCocoaHeads-Info.plist"; sourceTree = "<group>"; };
+		907A3ABF153F6B2500DCA89D /* DemoWSCocoaHeads-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoWSCocoaHeads-Info.plist"; sourceTree = "<group>"; };
 		907A3AC1153F6B2500DCA89D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		907A3AC3153F6B2500DCA89D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		907A3AC5153F6B2500DCA89D /* DemoWSCocoaHeads-Prefix.pch */ = {isa = PBXFileReference; path = "DemoWSCocoaHeads-Prefix.pch"; sourceTree = "<group>"; };
-		907A3AC6153F6B2500DCA89D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		907A3AC5153F6B2500DCA89D /* DemoWSCocoaHeads-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoWSCocoaHeads-Prefix.pch"; sourceTree = "<group>"; };
+		907A3AC6153F6B2500DCA89D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		907A3AC7153F6B2500DCA89D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		907A3AC9153F6B2500DCA89D /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		907A3AC9153F6B2500DCA89D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		907A3ACA153F6B2500DCA89D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		907A3ACC153F6B2500DCA89D /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		907A3ACC153F6B2500DCA89D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		907A3ACD153F6B2500DCA89D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		907A3AD0153F6B2500DCA89D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		907A3AD3153F6B2500DCA89D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		907A3ADB153F6BB300DCA89D /* BMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMEvent.h; sourceTree = "<group>"; };
+		907A3ADC153F6BB300DCA89D /* BMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		907A3ABD153F6B2500DCA89D /* DemoWSCocoaHeads */ = {
 			isa = PBXGroup;
 			children = (
+				907A3ADA153F6B7F00DCA89D /* Model */,
 				907A3AC6153F6B2500DCA89D /* AppDelegate.h */,
 				907A3AC7153F6B2500DCA89D /* AppDelegate.m */,
 				907A3AC9153F6B2500DCA89D /* MasterViewController.h */,
@@ -104,6 +108,15 @@
 				907A3AC5153F6B2500DCA89D /* DemoWSCocoaHeads-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		907A3ADA153F6B7F00DCA89D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				907A3ADB153F6BB300DCA89D /* BMEvent.h */,
+				907A3ADC153F6BB300DCA89D /* BMEvent.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +187,7 @@
 				907A3AC8153F6B2500DCA89D /* AppDelegate.m in Sources */,
 				907A3ACB153F6B2500DCA89D /* MasterViewController.m in Sources */,
 				907A3ACE153F6B2500DCA89D /* DetailViewController.m in Sources */,
+				907A3ADD153F6BB300DCA89D /* BMEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +307,7 @@
 				907A3AD9153F6B2500DCA89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
